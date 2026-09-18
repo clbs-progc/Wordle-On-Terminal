@@ -360,7 +360,7 @@ int WordleRun(HANDLE hStdOut, char ListWords[][5])
             if(keyprev == 27)
             {
                 stringprint(hStdOut, 0, 11, "EXITING");
-                Sleep(2000);
+                Sleep(1000);
                 return 0;
             }
         }
@@ -427,6 +427,7 @@ int main()
 {
     HANDLE hStdOut = GetStdHandle(STD_OUTPUT_HANDLE);
     Menu(hStdOut);
+
     //rngTest(hStdOut);
 
     return 1;
